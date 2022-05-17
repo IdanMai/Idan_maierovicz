@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
     <title>Contact</title>
 </head>
-<body background="../static/how-to-write-a-letter.jpeg">
+<!--  background="" -->
+
+<body>
+    <img src="../static/how-to-write-a-letter.jpg" class="bg" />
+    <img src="../static/how-to-write-a-letter.png" class="mobile-bg" />
     <header>
-        <a style="color: palevioletred;" href="./home.html">Home</a>
-        <a style="color: palevioletred;" href="./contact.html">Contact</a>
+        <a href="./home.html" id="nav__home-link">Home</a>
+        <a href="./contact.html" id="nav__contact-link">Contact</a>
     </header>
-    <center><h1 style="font-size: 50px; color: black;">Contact Form</h1>
+    <h1>Contact Form</h1>
     <span>
-    <form action="" id="onlyForm" >
-        
-            <div style="margin: 3px;">
-            <label for="first_name">First Name *</label><br>
-            <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+        <form action="" id="only-form">
+            <div class="form-row">
+                <label for="first_name">First Name *</label><br>
+                <input type="text" id="first_name" name="first_name" required>
             </div>
-            <div style="margin: 3px;">
+            <div class="form-row">
                 <label for="last_name">Last Name *</label><br>
-                <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+                <input type="text" id="last_name" name="last_name" required>
             </div>
-            <div style="margin: 3px;">
+            <div class="form-row">
                 <label for="email">Email *</label><br>
-                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="email" id="email" name="email" required>
             </div>
-            <div style="margin: 3px;">
+            <div class="form-row">
                 <label for="phone_number">Phone Number</label><br>
-                <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" minlength="10">
+                <input type="tel" id="phone_number" name="phone_number" minlength="10">
             </div>
-            <div style="margin: 3px;">
+            <div class="form-row">
                 <label for="subject">Subject *</label><br>
-                <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+                <input type="text" id="subject" name="subject" required><br>
             </div>
-            <div style="margin: 3px;">
-                <textarea rows = "5" cols = "50" name = "description" style="margin: 10px;">
-I just wanted to say somthing about home pages...
+            <div class="form-row">
+                <textarea rows="5" cols="50" name="description">
+I just wanted to say something about home pages...
                  </textarea>
             </div>
-            <input type="submit" value="Submit">
-        
-    </form>
-    
+            <input type="submit" value="Submit" id="submit-btn">
+
+        </form>
+
 
     </span>
-</center>
+
+    <script src="../static/main.js"></script>
 </body>
+
 </html>

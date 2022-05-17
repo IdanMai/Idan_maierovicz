@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
     <title>Home Page</title>
 </head>
-<body style="background-color: rgb(188, 226, 126);">
-   
-        <a style="color: palevioletred;" href="./home.html ">Home</a>
-        <a style="color: palevioletred;" href="./contact.html">Contact</a>
-        <div style="background-color: rgb(207, 243, 148);"> <header></header>
+
+<body id="home-page">
+    <header>
+        <a href="./home.html">Home</a>
+        <a href="./contact.html">Contact</a>
     </header>
-    <center>
-        <div style="border: 5px solid white; padding: 16px;">
-    <h1 style="font-size: 50px; padding: 10px; color: palevioletred;">Home Page</h1>
-    <p style="color: palevioletred; font-size: 25px;">The Page that's Home</p>
-    
-        <img style="border: 5px solid whitesmoke"; src="/Users/idan/Desktop/WEB/Idan_maierovicz/static/secondHouse.png" alt="House" style="padding: 20px;">
-<p style="color: palevioletred; font-size: larger;">If you love home pages as much as we do, you have come to the right place!</p>
-<a style="color: palevioletred; font-size: larger;" href="./contact.html">Tell us how much you love home pages</p>   
-</center>
-</div>
-</div>
+
+    <div class="home-page__container">
+        <h1 class="home-page__title">Home Page</h1>
+        <p class="home-page__paragraph">The Page that's Home </p>
+        <p class="home-page__paragraph small-text"> click the house for a surprise</p>
+
+        <img src="../static/secondHouse.png" alt="House">
+        <p class="home-page__paragraph">If you love home pages as much as we do, you have come to
+            the right place!</p>
+        <a class="home-page__link" href="./contact.html">Tell us how much you love home pages
+            </p>
+
+    </div>
+    </div>
+
+    <script src="../static/main.js"></script>
 </body>
+
 </html>
