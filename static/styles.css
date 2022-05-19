@@ -57,7 +57,7 @@ h1{
     border: none;
     resize: none;
     background: transparent;
-    width: 30vw;
+    width: 25vw;
 }
 
 #submit-btn{
@@ -108,18 +108,12 @@ h1{
 }
 
 .spin{
-    animation-name: spin-image;
-    animation-duration: 2s;
+    transform: rotateY(180deg);
 }
 
 @keyframes enter-image {
     from {width: 0;}
     to {width: 287px;}
-}
-
-@keyframes spin-image {
-    from { transform:rotate(0deg)}
-    to { transform:rotate(360deg)}
 }
 
 @media (max-width: 700px){
@@ -140,7 +134,7 @@ h1{
         align-items: flex-start;
     }
     .form-row textarea{
-        width: 40vw;
+        width: 35vw;
     }
     h1{
         margin-top: -1px;
